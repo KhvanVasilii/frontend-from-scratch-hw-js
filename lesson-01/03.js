@@ -6,7 +6,7 @@
 
 // your code
 let sum = 0;
-counter = 1;
+let counter = 1;
 while (counter <= 20) {
     if (counter % 2 === 1) {
         sum += counter;
