@@ -16,6 +16,6 @@ const hasTemporaryPass = false
 let isAccess = false;
 
 // your code
-if (isAdmin || (isVerifiedUser && !hasSpecialPermission) || (isVerifiedUser && !hasTemporaryPass)) {
+if (isAdmin || isVerifiedUser || (isVerifiedUser && !hasSpecialPermission) || (isVerifiedUser && !hasTemporaryPass)) {
     isAccess = true;
 }
