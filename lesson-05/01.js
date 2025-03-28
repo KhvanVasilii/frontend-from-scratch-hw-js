@@ -11,9 +11,13 @@
 */
 
 const game = {
-  resources: {
-    gold: 250,
-    lumber: 100,
-  },
-  addResource() {}
+    resources: {
+        gold: 250,
+        lumber: 100,
+    },
+    addResource: function (resource, amount) {
+        if (Object.hasOwn(this.resources, resource)) {
+            this.resources[resource] += amount;
+        }
+    },
 }
